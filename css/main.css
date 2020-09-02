@@ -1,0 +1,303 @@
+@import url("/css/framework/style.scss");
+@font-face {
+  font-family: 'norsebold';
+  src: url("/assets/font/norsebold-webfont.woff2") format("woff2"), url("/assets/font/norsebold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  background-color: white; }
+
+.main-container {
+  margin: 0 10rem;
+  color: #4a4a4a; }
+
+.navbar {
+  min-height: 100px; }
+  .navbar .logo {
+    display: flex;
+    align-items: center; }
+    .navbar .logo img {
+      margin-top: .75rem; }
+    .navbar .logo .logo-title {
+      font-family: "norsebold";
+      color: #cc9543;
+      font-size: 2rem;
+      margin-left: 1rem; }
+  .navbar .top-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0 2rem; }
+    .navbar .top-nav h5 {
+      color: rgba(74, 74, 74, 0.7);
+      font-weight: 700; }
+    .navbar .top-nav img {
+      margin-top: .75rem;
+      padding-right: 1rem;
+      height: 30px;
+      width: auto; }
+
+.center-content {
+  padding-top: 3rem;
+  justify-items: center;
+  align-items: center; }
+  .center-content img {
+    height: 125px;
+    width: auto;
+    margin-bottom: 1rem; }
+  .center-content h1 {
+    font-size: 2.25rem;
+    font-weight: 100;
+    margin-bottom: 2rem; }
+  .center-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #cc9543; }
+
+.main-section {
+  padding-top: 3rem; }
+
+.bullet-points ul {
+  list-style-type: disc;
+  position: sticky;
+  top: 0;
+  padding-top: 1rem; }
+  .bullet-points ul li {
+    margin: 1.75rem 0;
+    font-size: .825rem;
+    font-weight: 700; }
+
+.introduction {
+  padding-top: 5rem; }
+  .introduction h1 {
+    font-size: 1.75rem;
+    font-weight: 700; }
+  .introduction p {
+    font-size: 1.125rem;
+    line-height: 1.9;
+    padding-top: 1rem; }
+
+.assignment {
+  padding-top: 5rem; }
+  .assignment h1 {
+    font-size: 1.75rem;
+    font-weight: 700; }
+  .assignment p {
+    font-size: 1.125rem;
+    line-height: 1.9;
+    padding-top: 1rem; }
+  .assignment .assignment-container {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: #f3f3f3; }
+    .assignment .assignment-container ol {
+      padding-left: 1.5rem;
+      list-style-type: decimal;
+      line-height: 1.9;
+      font-weight: 400;
+      font-size: 1.1rem; }
+    .assignment .assignment-container li {
+      padding-top: 1rem; }
+    .assignment .assignment-container h1 {
+      font-size: 1.1rem;
+      margin-top: 5rem; }
+
+.student-solutions {
+  padding-top: 5rem; }
+  .student-solutions h1 {
+    font-size: 1.75rem;
+    font-weight: 700; }
+  .student-solutions p {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.9; }
+  .student-solutions p.grey {
+    margin-top: 2rem;
+    color: rgba(74, 74, 74, 0.7); }
+
+.additional {
+  padding-top: 5rem; }
+  .additional h1 {
+    font-size: 1.75rem;
+    font-weight: 700; }
+  .additional p {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.9; }
+  .additional ul {
+    margin-top: 2rem;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: rgba(74, 74, 74, 0.7);
+    font-size: 1.1rem; }
+
+.links {
+  background-color: #eee;
+  margin: 0 -10rem;
+  padding: 0 10rem;
+  margin-top: 5rem;
+  padding-top: 7rem; }
+
+.course-links .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+  padding: 4rem 6rem; }
+.course-links .btn {
+  margin: 0 2rem;
+  border-radius: .2rem;
+  box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: .2px;
+  padding: 1rem 4.5rem;
+  text-align: center;
+  cursor: pointer;
+  border: none; }
+.course-links .view, .course-links .next {
+  background-color: #cc9543; }
+.course-links .complete {
+  background-color: #6abfc3; }
+.course-links .github {
+  margin-top: 1.5rem;
+  justify-self: center;
+  color: #cc9543; }
+
+.discord {
+  padding-top: 5rem;
+  justify-items: center;
+  align-items: center; }
+  .discord h1 {
+    font-size: 2.25rem;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    color: rgba(74, 74, 74, 0.7); }
+  .discord h4 {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: rgba(74, 74, 74, 0.7); }
+  .discord .btn {
+    margin: 0 2rem;
+    border-radius: .2rem;
+    box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .2px;
+    padding: 1rem 4.5rem;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: #cc9543; }
+
+.thinkful {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  .thinkful .white-container {
+    box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 4rem 4rem; }
+  .thinkful .half {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .thinkful .header {
+    border-bottom: 3px solid #E5E5E5;
+    padding-bottom: 2rem; }
+    .thinkful .header h2 {
+      font-size: 1.5rem;
+      color: rgba(74, 74, 74, 0.7); }
+    .thinkful .header .btn {
+      border-radius: .2rem;
+      box-shadow: 0 0.05em 0.25em 0 rgba(0, 0, 0, 0.5);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: .2px;
+      padding: 1rem 3.5rem;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      background-color: #6abfc3; }
+  .thinkful .lower {
+    margin-top: 2rem; }
+    .thinkful .lower h2 {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #11343d; }
+    .thinkful .lower .think-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .thinkful .lower .think-links h5 {
+        margin-left: 1.5rem;
+        color: #4a4a4a;
+        font-weight: bold;
+        font-size: 1.125rem;
+        letter-spacing: 0.2px; }
+
+.footer {
+  min-height: 277px; }
+  .footer .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "norsebold";
+    color: #cc9543;
+    font-size: 2rem; }
+  .footer .footer-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .footer-icons img {
+      height: 30px;
+      width: auto;
+      margin: 0 1rem; }
+  .footer .footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .footer .footer-links ul {
+      margin: 0 3rem; }
+    .footer .footer-links li {
+      margin-bottom: 1rem;
+      color: rgba(74, 74, 74, 0.7);
+      font-weight: 700; }
+
+@media only screen and (max-width: 768px) {
+  .navbar .top-nav h5 {
+    display: none; }
+
+  .navbar .top-nav {
+    justify-content: flex-end; }
+
+  .navbar {
+    position: sticky;
+    top: 0;
+    background: white; } }
+@media only screen and (max-width: 992px) {
+  .bullet-points ul {
+    display: none; }
+
+  .main-container {
+    margin: 0 4rem; }
+
+  .footer .footer-icons img {
+    margin: .25rem; }
+
+  .footer .footer-links ul {
+    margin: 0 1rem; } }
+@media only screen and (max-width: 1150px) {
+  .course-links .container {
+    display: grid;
+    justify-items: center; }
+
+  .course-links .btn {
+    width: 100%;
+    margin: 1rem; } }
+
+/*# sourceMappingURL=main.css.map */

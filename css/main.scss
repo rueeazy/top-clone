@@ -1,0 +1,461 @@
+@import url('/css/framework/style.scss');
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('/assets/font/norsebold-webfont.woff2') format('woff2'),
+         url('/assets/font/norsebold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$logo-font: 'norsebold';
+$gold-color: #cc9543;
+$grey-color: rgba(74,74,74,0.7);
+$text-color: #4a4a4a;
+
+body {
+    background-color: white;
+}
+
+.main-container {
+    margin: 0 10rem;
+    color: $text-color;
+}
+
+// Navbar Styling //
+.navbar {
+    min-height: 100px;
+
+    .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-top: .75rem;
+        }
+
+        .logo-title {
+            font-family: $logo-font;
+            color: $gold-color;
+            font-size: 2rem;
+            margin-left: 1rem;
+        }
+    }
+
+    .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 0 2rem;
+
+        h5 {
+            color: $grey-color;
+            font-weight: 700;
+        }
+
+        img {
+            margin-top: .75rem;
+            padding-right: 1rem;
+            height: 30px;
+            width: auto;
+        }
+    }
+}
+
+// Center Header Styling //
+.center-content {
+
+    padding-top: 3rem;
+    justify-items: center;
+    align-items: center;
+    
+    img {
+        height: 125px;
+        width: auto;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: $gold-color;
+    }
+}
+
+// Main Section Styling //
+.main-section {
+    padding-top: 3rem;
+}
+
+// bullet points //
+.bullet-points {
+
+    ul {
+        list-style-type: disc;
+        position: sticky;
+        top: 0;
+        padding-top: 1rem;
+
+        li {
+            margin: 1.75rem 0;
+            font-size: .825rem;
+            font-weight: 700;
+        }
+    }
+}
+
+// main-text //
+@mixin text-format {
+    font-size: 1.125rem;
+    line-height: 1.9;
+}
+
+@mixin header-format {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+// introduction //
+.introduction {
+
+    padding-top: 5rem;
+    
+    h1 {
+        @include header-format;
+    }
+
+    p {
+        @include text-format;
+        padding-top: 1rem;
+    }
+}
+
+// assignment //
+@mixin ol-styling {
+    padding-left: 1.5rem;
+    list-style-type: decimal;
+    line-height: 1.9;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+.assignment {
+    padding-top: 5rem;
+
+    h1 {
+        @include header-format;
+    }
+
+    p {
+        @include text-format;
+        padding-top: 1rem;
+    }
+
+    .assignment-container {
+        margin-top: 2rem;
+        padding: 1.5rem;
+        background-color: #f3f3f3;
+
+        ol {
+            @include ol-styling;
+        }
+
+        li {
+            padding-top: 1rem;
+        }
+
+        h1 {
+            font-size: 1.1rem;
+            margin-top: 5rem;
+        }
+    }
+}
+
+// student Solutions //
+.student-solutions {  
+    padding-top: 5rem;
+
+    h1 {
+        @include header-format;
+    }
+
+    p {
+        margin-top: 1rem;
+        @include text-format;
+    }
+
+    p.grey {
+        margin-top: 2rem;
+        color: $grey-color;
+    }
+}
+
+// additional //
+.additional {  
+    padding-top: 5rem;
+
+    h1 {
+        @include header-format;
+    }
+
+    p {
+        margin-top: 1rem;
+        @include text-format;
+    }
+
+    ul {
+        margin-top: 2rem;
+        list-style-type: disc;
+        list-style-position: inside;
+        color: $grey-color;
+        font-size: 1.1rem;
+    }
+}
+
+// Links Section // 
+
+.links {
+    background-color: #eee;
+    margin: 0 -10rem;
+    padding: 0 10rem;
+    margin-top: 5rem;
+    padding-top:7rem;
+}
+
+// course links //
+.course-links {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1);
+        padding: 4rem 6rem;
+    }
+
+    .btn {
+        margin: 0 2rem;
+        border-radius: .2rem;
+        box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: .2px;
+        padding: 1rem 4.5rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+    }
+
+    .view, .next {
+        background-color: $gold-color;
+    }
+
+    .complete {
+        background-color: #6abfc3;;
+    }
+
+    .github {
+        margin-top: 1.5rem;
+        justify-self: center;
+        color: $gold-color;
+    }
+}
+
+// discord styling //
+.discord {
+    padding-top: 5rem;
+    justify-items: center;
+    align-items: center;
+
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+        color: $grey-color;
+    }
+
+    h4 {
+        margin-bottom: 2rem;
+        font-size: 1.1rem;
+        color: $grey-color;
+    }
+    
+    .btn {
+        margin: 0 2rem;
+        border-radius: .2rem;
+        box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+        color: #fff;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: .2px;
+        padding: 1rem 4.5rem;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        background-color: $gold-color;
+    }
+}
+
+// thinkful styling //
+.thinkful {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+    .white-container {
+        box-shadow: 0 5px 16px 0 rgba(0,0,0,0.1);
+        background-color: #fff;
+        padding: 4rem 4rem;
+    }
+
+    .half {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header {
+        border-bottom: 3px solid #E5E5E5;
+        padding-bottom: 2rem;
+
+        h2 {
+            font-size: 1.5rem;
+            color: $grey-color;
+        }
+
+        .btn {
+            border-radius: .2rem;
+            box-shadow: 0 0.05em 0.25em 0 rgba(0,0,0,0.5);
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: .2px;
+            padding: 1rem 3.5rem;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            background-color: #6abfc3;
+        }
+    }
+
+    .lower {
+        margin-top: 2rem;
+
+        h2 {
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #11343d;
+        }
+
+        .think-links {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h5 {
+                margin-left: 1.5rem;
+                color: #4a4a4a;
+                font-weight: bold;
+                font-size: 1.125rem;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+}
+
+// Footer //
+.footer {
+    min-height: 277px;
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $logo-font;
+        color: $gold-color;
+        font-size: 2rem;
+    }
+
+    .footer-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: 30px;
+            width: auto;
+            margin: 0 1rem;
+        }
+    }
+
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        ul {
+            margin: 0 3rem;
+        }
+
+        li {
+            margin-bottom: 1rem;
+            color: $grey-color;
+            font-weight: 700;
+        }
+    }
+}
+
+// Media Queries //
+
+@media only screen and (max-width: 768px) {
+    .navbar .top-nav h5 {
+        display: none;
+    }
+    .navbar .top-nav {
+        justify-content: flex-end;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        background: white; 
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .bullet-points ul {
+        display: none;
+    }
+
+    .main-container {
+        margin: 0 4rem;
+    }
+
+    .footer .footer-icons img {
+        margin: .25rem;
+    }
+
+    .footer .footer-links ul {
+        margin: 0 1rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .course-links .container {
+        display: grid;
+        justify-items: center;
+    }
+
+    .course-links .btn {
+        width: 100%;
+        margin: 1rem;
+    }
+}
+
